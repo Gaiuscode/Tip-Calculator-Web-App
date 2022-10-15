@@ -82,6 +82,7 @@ html, body {
     background-color: hsl(189, 41%, 97%);
     color: hsl(183, 100%, 15%);
     margin: auto;
+    margin-top: 1.2rem;
 }
 
 .tip {
@@ -170,10 +171,24 @@ html, body {
 }
 
 @media (max-width:767px){
-    .calc-right .cl-input,
-    .calc-left .cl-input {
-        flex: 0 0 100%;
-        max-width: 100%;
+    .calc
+    {
+        flex-direction: column;
+    }
+    .calc-right,
+    .calc-left {
+        width: 100%;
+    }
+    .calc-left
+    {
+        padding: 1.3rem;
+    }
+    .cl-tip{
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+    }
+    .bill-input {
+        width: max-content;
     }
 }
 /* @media and screen (max-width: desktop) 
