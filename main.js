@@ -3,12 +3,12 @@ let noOfPeopleEl = document.querySelector('#people');
 let tipPercentages = document.querySelectorAll('.cl-tip');
 let tipAmountPerPersonEl = document.querySelector('#tip-per-person');
 let totalAmountPerPersonEl = document.querySelector('#total-per-person');
-let tipCustom = document.querySelector(".cl-tip-custom")
+let resetBtn = document.querySelector(".reset")
 
 let billAmount = 0;
 let noOfPeople = 0;
 let tipPercentage = 0;
-
+ 
 billEl.addEventListener('keyup', (e) => {
   billAmount = Number(e.target.value);
   calculateTip();
@@ -20,10 +20,8 @@ noOfPeopleEl.addEventListener('keyup', (e) => {
   calculateTip();
 });
 
-tipCustom.addEventListener('type', (e) => {
-  tipCustom = InputEvent(e,target.value);
-  calculateTip();
-})
+resetBtn.addEventListener('click', reset);
+
 
 Array.from(tipPercentages).forEach((tipPercentageEl) => {
   tipPercentageEl.addEventListener('click', (e) => {
@@ -34,7 +32,13 @@ Array.from(tipPercentages).forEach((tipPercentageEl) => {
     }
   });
 });
+// function tipInputFun() {
+//    tipValue = parseFloat(cl-tip-custom.value / 100);
 
+//    tipCustom.forEach(function(vaL){
+//     vaL.classList.remove("active");
+//    });
+// }   
 function calculateTip() {
 
   let tipAmount = billAmount * (tipPercentage / 100);
@@ -64,5 +68,3 @@ function applyActiveClass(innerTextPect) {
       }
   });
 }
-
-// function
