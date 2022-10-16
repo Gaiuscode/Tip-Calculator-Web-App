@@ -68,3 +68,11 @@ function applyActiveClass(innerTextPect) {
       }
   });
 }
+
+function reset(){
+  billEl = "0";
+  billAmount()
+  noOfPeopleEl = "1";
+  noOfPeople()
+  tipPercentages= "";
+}
