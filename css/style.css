@@ -193,9 +193,10 @@ html, body {
         justify-content: space-between;
     }
     .cl-tip{
-        flex: 0 0 35.3%;
-        max-width: 35.3%;
-        margin-right: -px;
+        flex: 0 0 36.0%;
+        max-width: 36.0%;
+        margin-right: -26px;
+        padding: rem;
     }
     .bill-input {
         width: max-content;
