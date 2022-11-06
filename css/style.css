@@ -176,7 +176,7 @@ html, body {
     background: hsl(172, 67%, 45%);
     transition: all 0.5s ;
 }
-@media (max-width:767px){
+/* @media (max-width:767px){
     .calc
     {
         padding:1rem;
@@ -202,7 +202,7 @@ html, body {
     .bill-input {
         width: max-content;
     }
-}
+} */
 /* @media and screen (max-width: desktop) 
 
 @media and screen (max-width: laptop) 
