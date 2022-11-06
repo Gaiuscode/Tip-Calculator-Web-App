@@ -177,6 +177,25 @@ html, body {
     background: hsl(172, 67%, 45%);
     transition: all 0.5s ;
 }
+@media (max-width: 300px) {
+    .calc{
+        padding: 1rem;
+     }
+    
+    
+    .cl-tip{
+       flex: 30%;
+       max-width: 30%;
+       margin-right: 1px;
+    }
+    .tip-amount, .pers{
+        margin-left: -30%;
+    }
+    .dollar
+    {
+        font-size: 10px;
+    }
+}
 @media (max-width:767px){
     .calc
     {
@@ -191,9 +210,13 @@ html, body {
         margin-left: 2rem;
         margin-bottom: 2rem;
     }
-    .calc-right
+     .calc-right
     {
-    
+     padding: 1rem;
+    }
+    .dollar
+    {
+     font-size: 30px;
     }
 }
 /* @media and screen (max-width: desktop) 
