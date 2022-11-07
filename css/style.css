@@ -184,7 +184,7 @@ html, body {
 }
 @media (max-width:991px){
     .calc{
-        padding: 2rem;
+        padding: rem;
     }
     .calc-left,
     .calc-right {
@@ -193,7 +193,9 @@ html, body {
     .calc-right{
         padding: 1rem;
     }
-    .dollar
+    .dollar {
+        font-size: 28px;
+    }
 }
 @media (max-width:767px){
     .calc
