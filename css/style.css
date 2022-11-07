@@ -177,6 +177,24 @@ html, body {
     background: hsl(172, 67%, 45%);
     transition: all 0.5s ;
 }
+@media (max-width:1199px) {
+    .calculator{
+        padding: 0;
+    }
+}
+@media (max-width:991px){
+    .calc{
+        padding: 2rem;
+    }
+    .calc-left,
+    .calc-right {
+        width: 50%;
+    }
+    .calc-right{
+        padding: 1rem;
+    }
+    .dollar
+}
 @media (max-width:767px){
     .calc
     {
@@ -201,13 +219,14 @@ html, body {
     }
 }
 @media (max-width: 300px) {
-    .calculator{
-        padding: 0;
-    }
+   
     .calc{
-        padding: 1rem;
+        padding: .8rem;
      }
-    
+    .tip-top{
+        display: flex;
+        justify-content: space-between;
+    }
     
     .cl-tip{
        flex: 30%;
@@ -215,7 +234,13 @@ html, body {
        margin-right: 1px;
     }
     .tip-amount, .pers{
-        margin-left: -30%;
+        margin-left: -20%;
+        font-size: 10px;
+    }
+    .dollar 
+    {
+        margin-right: -10% !important;
+        font-size: 25px;
     }
 }
 
