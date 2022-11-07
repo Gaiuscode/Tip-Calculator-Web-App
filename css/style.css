@@ -201,6 +201,9 @@ html, body {
     }
 }
 @media (max-width: 300px) {
+    .calculator{
+        padding: 0;
+    }
     .calc{
         padding: 1rem;
      }
