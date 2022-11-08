@@ -80,13 +80,5 @@ function reset() {
 
 function noOfPeople() {
   if (noOfPeople == 0) {
-    var content = document
-    .querySelector(".content")
-    .innerHTML;
-    content = ("It cannot be" + 0 + "!");
-
-    document
-      .querySelector(".content")
-      .innerHTML = content
-  }
+    
 }
