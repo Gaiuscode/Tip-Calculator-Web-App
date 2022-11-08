@@ -28,9 +28,6 @@ noOfPeopleEl.addEventListener('keyup', (e) => {
   calculateTip();
 });
 
-resetBtn.addEventListener('click', reset);
-
-
 Array.from(tipPercentages).forEach((tipPercentageEl) => {
   tipPercentageEl.addEventListener('click', (e) => {
     if (e.target.innerText.includes('%')) {
