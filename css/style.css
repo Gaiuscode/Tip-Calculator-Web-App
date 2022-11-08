@@ -260,6 +260,10 @@ html, body {
     }
 }
 @media (max-width: 300px) {
+    .calculator{
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
    
     .calc{
         padding: .8rem;
