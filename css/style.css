@@ -111,6 +111,7 @@ html, body {
 }
 .error{
     color: red;
+    display: none;
 }
 .bill-input:hover{
     border: 3px solid hsl(172, 67%, 45%);
