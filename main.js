@@ -18,6 +18,14 @@ billEl.addEventListener('keyup', (e) => {
 
 noOfPeopleEl.addEventListener('keyup', (e) => {
   noOfPeople = Number(e.target.value);
+
+  if (noOfPeople < 1) {
+    error.style.display ="flex"
+    noOfPeopleEl.style.border ="thick solid red";
+  } else {
+    error.style.display ="none"
+    noOfPeopleEl.style.border ="none";
+  }
   calculateTip();
 });
 
@@ -70,15 +78,15 @@ function applyActiveClass(innerTextPect) {
   }); 
 }
 
-function reset() {
-  billEl = "0";
-  billAmount()
-  noOfPeopleEl = "1";
-  noOfPeople()
-  tipPercentages = "";
-}
+// function reset() {
+//   billEl = "0";
+//   billAmount()
+//   noOfPeopleEl = "1";
+//   noOfPeople()
+//   tipPercentages = "";
+// }
 
-function noOfPeople() {
-  if (noOfPeople == 0) {
+// function noOfPeople() {
+  
     
-}
+// }
