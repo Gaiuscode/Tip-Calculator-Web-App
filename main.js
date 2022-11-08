@@ -5,7 +5,7 @@ let tipAmountPerPersonEl = document.querySelector('#tip-per-person');
 let totalAmountPerPersonEl = document.querySelector('#total-per-person');
 let resetBtn = document.querySelector(".reset")
 let error = document.querySelector(".error")
-let billInput = document.querySelector(".bill-input")
+let people = document.querySelector("#people")
 
 let billAmount = 0;
 let noOfPeople = 0;
@@ -22,10 +22,10 @@ noOfPeopleEl.addEventListener('keyup', (e) => {
 
   if (noOfPeople < 1) {
     error.style.display ="flex"
-    billInput.style.border ="thick solid red";
+    people.style.border ="thick solid red";
   } else {
     error.style.display ="none"
-    billInput.style.border ="none";
+    people.style.border ="none";
   }
   calculateTip();
 });
