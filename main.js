@@ -7,8 +7,9 @@ let error = document.querySelector(".error")
 let billInput = document.querySelector(".bill-input2")
 
 let billAmount = 0;
-let noOfPeople = 0;
+let noOfPeople = 1;
 let tipPercentage = 0;
+
 
 billEl.addEventListener('keyup', (e) => {
   billAmount = Number(e.target.value);
