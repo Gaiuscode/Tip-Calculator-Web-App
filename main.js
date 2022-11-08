@@ -8,7 +8,7 @@ let resetBtn = document.querySelector(".reset")
 let billAmount = 0;
 let noOfPeople = 0;
 let tipPercentage = 0;
- 
+
 billEl.addEventListener('keyup', (e) => {
   billAmount = Number(e.target.value);
   calculateTip();
@@ -61,18 +61,31 @@ function updateValues({ tipAmountPerPerson, totalAmountPerPerson }) {
 
 function applyActiveClass(innerTextPect) {
   Array.from(tipPercentages).forEach((tipPercentageEl) => {
-      if (tipPercentageEl.innerText == innerTextPect) {
-        tipPercentageEl.classList.add('active')
-      } else {
-        tipPercentageEl.classList.remove('active')
-      }
-  });
+    if (tipPercentageEl.innerText == innerTextPect) {
+      tipPercentageEl.classList.add('active')
+    } else {
+      tipPercentageEl.classList.remove('active')
+    }
+  }); 
 }
 
-function reset(){
+function reset() {
   billEl = "0";
   billAmount()
   noOfPeopleEl = "1";
   noOfPeople()
-  tipPercentages= "";
+  tipPercentages = "";
+}
+
+function alert() {
+  if (noOfPeople == 0) {
+    var content = document
+    .querySelector(".content")
+    .innerHTML;
+    content = ("It cannot be" + 0 + "!");
+
+    document
+      .querySelector(".content")
+      .innerHTML = content
+  }
 }
