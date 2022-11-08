@@ -77,7 +77,7 @@ function reset() {
   tipPercentages = "";
 }
 
-function alert() {
+function noOfPeople() {
   if (noOfPeople == 0) {
     var content = document
     .querySelector(".content")
