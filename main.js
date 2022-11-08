@@ -5,7 +5,7 @@ let tipAmountPerPersonEl = document.querySelector('#tip-per-person');
 let totalAmountPerPersonEl = document.querySelector('#total-per-person');
 let resetBtn = document.querySelector(".reset")
 let error = document.querySelector(".error")
-let people = document.querySelector("#people")
+let people = document.querySelector(".bill-input2")
 
 let billAmount = 0;
 let noOfPeople = 0;
