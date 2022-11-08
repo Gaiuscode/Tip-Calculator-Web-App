@@ -5,7 +5,7 @@ let tipAmountPerPersonEl = document.querySelector('#tip-per-person');
 let totalAmountPerPersonEl = document.querySelector('#total-per-person');
 let resetBtn = document.querySelector(".reset")
 let error = document.querySelector(".error")
-let people = document.querySelector(".bill-input2")
+let billInput = document.querySelector(".bill-input2")
 
 let billAmount = 0;
 let noOfPeople = 0;
@@ -19,13 +19,12 @@ billEl.addEventListener('keyup', (e) => {
 
 noOfPeopleEl.addEventListener('keyup', (e) => {
   noOfPeople = Number(e.target.value);
-
   if (noOfPeople < 1) {
     error.style.display ="flex"
-    people.style.border ="thick solid red";
+    billInput.style.border ="thick solid red";
   } else {
     error.style.display ="none"
-    people.style.border ="none";
+    billInput.style.border ="none";
   }
   calculateTip();
 });
@@ -79,15 +78,23 @@ function applyActiveClass(innerTextPect) {
   }); 
 }
 
-// function reset() {
-//   billEl = "0";
-//   billAmount()
-//   noOfPeopleEl = "1";
-//   noOfPeople()
-//   tipPercentages = "";
-// }
+function reset() {
+  billEl = "0";
+  billAmount()
+  noOfPeopleEl = "1";
+  noOfPeople()
+  tipPercentages = "";
+}
 
-// function noOfPeople() {
-  
-    
-// }
+function alert() {
+  if (noOfPeople == 0) {
+    var content = document
+    .querySelector(".content")
+    .innerHTML;
+    content = ("It cannot be" + 0 + "!");
+
+    document
+      .querySelector(".content")
+      .innerHTML = content
+  }
+}
