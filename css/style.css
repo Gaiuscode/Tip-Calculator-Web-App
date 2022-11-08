@@ -47,6 +47,13 @@ html, body {
     padding: 0.5rem;
     border-radius: 4px;
 }
+.bill-input2{
+    width: 100%;
+    display: flex;
+    background-color: hsl(189, 41%, 97%);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
 
 .c1-input, label {
     color: hsl(183, 100%, 15%);
@@ -128,6 +135,33 @@ html, body {
     margin: 0;
 }
 .bill-input span{
+    width: 45px;
+    text-align: center;
+    color: hsl(185, 41%, 80%);
+}
+.bill-input2:hover{
+    border: 3px solid hsl(172, 67%, 45%);
+}
+
+.bill-input2 input {
+    width: 100%;
+    border: none;
+    text-align: right;
+    background-color: transparent;    
+    font-weight: 900;
+    color: hsl(183, 100%, 15%);
+}
+.bill-input2 input:focus {
+    outline: none;
+}
+
+
+.bill-input2 input[type=number]::-webkit-inner-spin-button,
+.bill-input2 input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.bill-input2 span{
     width: 45px;
     text-align: center;
     color: hsl(185, 41%, 80%);
