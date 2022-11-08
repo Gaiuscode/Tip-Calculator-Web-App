@@ -98,6 +98,13 @@ html, body {
 .tip {
     margin-top: 2rem;
 }
+.no-of-people {
+    display: flex;
+    justify-content: space-between;
+}
+.error{
+    color: red;
+}
 .bill-input:hover{
     border: 3px solid hsl(172, 67%, 45%);
 }
