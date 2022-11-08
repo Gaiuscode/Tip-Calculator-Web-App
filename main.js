@@ -3,7 +3,6 @@ let noOfPeopleEl = document.querySelector('#people');
 let tipPercentages = document.querySelectorAll('.cl-tip');
 let tipAmountPerPersonEl = document.querySelector('#tip-per-person');
 let totalAmountPerPersonEl = document.querySelector('#total-per-person');
-let resetBtn = document.querySelector(".reset")
 let error = document.querySelector(".error")
 let billInput = document.querySelector(".bill-input2")
 
