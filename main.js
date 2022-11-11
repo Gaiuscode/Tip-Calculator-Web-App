@@ -75,8 +75,11 @@ function applyActiveClass(innerTextPect) {
   }); 
 }
 
-resetBtn.addEventListener("click", (e) => {
-  reset = Button(e.target.innerText.)
+function resetTip() {
+  let billAmount = 0
+  let noOfPeople = 0
 }
-
+resetBtn.addEventListener("click", (e) => {
+  reset = Button(e.target.innerText)
+}
 )
