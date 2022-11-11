@@ -6,6 +6,7 @@ let totalAmountPerPersonEl = document.querySelector('#total-per-person');
 let error = document.querySelector(".error")
 let billInput = document.querySelector(".bill-input2")
 let resetBtn = document.querySelector(".reset")
+
 let billAmount = 0;
 let noOfPeople = 1;
 let tipPercentage = 0;
@@ -75,11 +76,12 @@ function applyActiveClass(innerTextPect) {
   }); 
 }
 
-function resetTip() {
-  let billAmount = 0
-  let noOfPeople = 0
+
+resetBtn.addEventListener("click", reset);
+
+function reset() {
+  billAmount.value = 0
+   billEl();
+  noOfPeople.value = 1;
+  noOfPeopleEl ();
 }
-resetBtn.addEventListener("click", (e) => {
-  reset = Button(e.target.innerText)
-}
-)
