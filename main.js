@@ -81,7 +81,5 @@ resetBtn.addEventListener("click", reset);
 
 function reset() {
   billAmount.value = 0
-   billEl();
   noOfPeople.value = 1;
-  noOfPeopleEl ();
 }
