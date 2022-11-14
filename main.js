@@ -14,7 +14,7 @@ let tipPercentage = 0;
 
 billEl.addEventListener('keyup', billAmountFun);
  function billAmountFun() {
-  billAmount = Number(billAmountFun.target.value);
+  billAmount = Number(billEl.target.value);
   calculateTip();
 } ;
 
@@ -83,6 +83,7 @@ resetBtn.addEventListener("click", reset);
 
 function reset() {
   billAmount.value = "0"; 
-  noOfPeople.value = "1";
-  
+  billAmountFun ()
+  noOfPeople.value = "1"
+  noOfPeopleFun ()
 }
