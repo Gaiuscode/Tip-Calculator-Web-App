@@ -12,14 +12,16 @@ let noOfPeople = 1;
 let tipPercentage = 0;
 
 
-billEl.addEventListener('keyup', (e) => {
+billEl.addEventListener('keyup', billAmountFun);
+ => {
   billAmount = Number(e.target.value);
   calculateTip();
 });
 
 
-noOfPeopleEl.addEventListener('keyup', (e) => {
-  noOfPeople = Number(e.target.value);
+noOfPeopleEl.addEventListener('keyup', noOfPeopleFun) 
+function noOfPeopleFun() {
+  noOfPeople = Number(billEl.target.value);
   if (noOfPeople < 1) {
     error.style.display ="flex"
     billInput.style.border ="thick solid red";
