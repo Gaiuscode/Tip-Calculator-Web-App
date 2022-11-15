@@ -13,11 +13,9 @@ let tipPercentage = 0;
 
 
 billEl.addEventListener('keyup', (e) => {
- function billAmountFun() {
-  billAmount = Number(billAmountFun.target.value);
+  billAmount = Number(e.target.value);
   calculateTip();
-} 
-}
+});
 
 
 noOfPeopleEl.addEventListener('keyup', (e) => {
@@ -30,7 +28,7 @@ noOfPeopleEl.addEventListener('keyup', (e) => {
     billInput.style.border ="none";
   }
   calculateTip();
-}
+});
 
 Array.from(tipPercentages).forEach((tipPercentageEl) => {
   tipPercentageEl.addEventListener('click', (e) => {
