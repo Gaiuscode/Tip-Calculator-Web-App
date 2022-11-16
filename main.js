@@ -12,6 +12,7 @@ let tipCustom = document.querySelector('.cl-tip cl-tip-custom')
 let billAmount = 0;
 let noOfPeople = 1;
 let tipPercentage = 0;
+let tipInput = 0;
 
 
 billEl.addEventListener('keyup', (e) => {
