@@ -6,6 +6,8 @@ let totalAmountPerPersonEl = document.querySelector('#total-per-person');
 let error = document.querySelector(".error")
 let billInput = document.querySelector(".bill-input2")
 let resetBtn = document.querySelector(".reset")
+let tipCustom = document.querySelector('.cl-tip cl-tip-custom')
+
 
 let billAmount = 0;
 let noOfPeople = 1;
