@@ -43,17 +43,15 @@ Array.from(tipPercentages).forEach((tipPercentageEl) => {
   });
 });
 
-tipCustom.addEventListener('keyup', (e) => {
-  tipInput = Number(e.target.value/100);
-  calculateTip();
-});
-// function tipInputFun() {
-//    tipValue = parseFloat(cl-tip-custom.value / 100);
+tipCustom.addEventListener('keyup', tipInputFun)
+function tipInputFun() {
+   tipValue = parseFloat(cl-tip-custom.value / 100);
 
-//    tipCustom.forEach(function(vaL){
-//     vaL.classList.remove("active");
-//    });
-// }   
+   tipCustom.forEach(function(vaL){
+    vaL.classList.remove("active");
+   });
+}   
+
 function calculateTip() {
 
   let tipAmount = billAmount * (tipPercentage / 100);
