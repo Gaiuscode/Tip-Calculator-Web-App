@@ -9,6 +9,9 @@ let resetBtn = document.querySelector(".reset")
 let tipCustom = document.querySelector('.cl-tip cl-tip-custom')
 
 
+ billEl.value = "0";
+ noOfPeopleEl.value = "1";
+
 let billAmount = 0;
 let noOfPeople = 1;
 let tipPercentage = 0;
@@ -17,14 +20,14 @@ let tipInput = 0;
 
 billEl.addEventListener('keyup', billInputFun) 
 function billInputFun () {
-  billAmount = Number(billEl.target.value);
+  billAmount = Number(billEl.value);
   calculateTip();
 };
 
 
 noOfPeopleEl.addEventListener('keyup', noOfPeopleFun)
 function noOfPeopleFun() {
-  noOfPeople = Number(noOfPeopleEl.target.value);
+  noOfPeople = Number(noOfPeopleEl.value);
   if (noOfPeople < 1) {
     error.style.display ="flex"
     billInput.style.border ="thick solid red";
