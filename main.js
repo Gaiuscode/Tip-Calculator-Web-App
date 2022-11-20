@@ -83,9 +83,9 @@ function applyActiveClass(innerTextPect) {
 }
 
 
-resetBtn.addEventListener("click", reset);
+resetBtn.addEventListener('click', reset);
 
-function reset() {
+function reset()  {
   billAmount.value = "0"; 
   noOfPeople.value = "1"
 }
