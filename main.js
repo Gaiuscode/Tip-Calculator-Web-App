@@ -88,6 +88,8 @@ function applyActiveClass(innerTextPect) {
 resetBtn.addEventListener('click', reset);
 
 function reset()  {
-   billEl.value = "0";
- noOfPeopleEl.value = "1";
+  billEl.value = "0";
+  billInputFun()
+  noOfPeopleEl.value = "1";
+  noOfPeopleFun()
 }
