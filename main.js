@@ -17,7 +17,7 @@ let tipInput = 0;
 
 billEl.addEventListener('keyup', billInputFun) 
 function billInputFun () {
-  billAmount = Number(.target.value);
+  billAmount = Number(billEl.target.value);
   calculateTip();
 };
 
