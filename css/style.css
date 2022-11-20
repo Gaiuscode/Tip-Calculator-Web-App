@@ -6,13 +6,14 @@
 
 :root {
     --border-radius: 10px;
-    --mobile : 576px;
-    --tablet : 768px;
-    --laptop : 992px;
-    --desktop : 1200px; 
+    --mobile: 576px;
+    --tablet: 768px;
+    --laptop: 992px;
+    --desktop: 1200px;
 }
 
-html, body {
+html,
+body {
     font-family: 'Space Mono', monospace;
     background-color: hsl(185, 41%, 84%);
     height: 100vh;
@@ -32,22 +33,17 @@ html, body {
     background-color: hsl(0, 0%, 100%);
     padding: 1.5rem 1.5rem;
     border-radius: var(--border-radius);
-    box-shadow: 0 0 50px  rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+
 .calc-left {
     margin-right: 35px;
 }
-.bill-input{
-    width: 100%;
-    display: flex;
-    background-color: hsl(189, 41%, 97%);
-    padding: 0.5rem;
-    border-radius: 4px;
-}
-.bill-input2{
+
+.bill-input {
     width: 100%;
     display: flex;
     background-color: hsl(189, 41%, 97%);
@@ -55,41 +51,53 @@ html, body {
     border-radius: 4px;
 }
 
-.c1-input, label {
+.bill-input2 {
+    width: 100%;
+    display: flex;
+    background-color: hsl(189, 41%, 97%);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.c1-input,
+label {
     color: hsl(183, 100%, 15%);
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
+
 .tip-value {
     margin-bottom: 2rem;
 }
+
 /* .tip-value {
     display: flex;
     flex-wrap: wrap;
 } */
-.calc-left .tip-value .cl-tips
-{
+.calc-left .tip-value .cl-tips {
     display: flex;
     justify-content: space-between;
-} 
- .cl-tip {
+}
+
+.cl-tip {
     flex: 0 0 33.3%;
     max-width: 30%;
     margin-top: 20px;
     height: 2.2rem;
-    background-color:  hsl(183, 100%, 15%);
+    background-color: hsl(183, 100%, 15%);
     border-radius: 5px;
     text-align: center;
     font-size: 1rem;
     font-weight: 900;
-    color:  hsl(189, 41%, 97%);
+    color: hsl(189, 41%, 97%);
     padding: 0.4rem 0.4rem;
 }
 
 .cl-tip.active {
-    background-color:  hsl(172, 67%, 45%);
-    color:  hsl(189, 41%, 97%);
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(189, 41%, 97%);
 }
+
 .cl-tip-custom {
     border: none;
     background-color: hsl(189, 41%, 97%);
@@ -104,24 +112,30 @@ html, body {
     font-weight: 900;
     padding: 0.4rem 0.4rem;
 }
+
 .cl-tips1 input {
     border: none;
 }
+
 .cl-tips1 input:hover {
     border: 3px solid hsl(183, 100%, 15%);
 }
+
 .tip {
     margin-top: 2rem;
 }
+
 .no-of-people {
     display: flex;
     justify-content: space-between;
 }
-.error{
+
+.error {
     color: red;
     display: none;
 }
-.bill-input:hover{
+
+.bill-input:hover {
     border: 3px solid hsl(172, 67%, 45%);
 }
 
@@ -129,10 +143,11 @@ html, body {
     width: 100%;
     border: none;
     text-align: right;
-    background-color: transparent;    
+    background-color: transparent;
     font-weight: 900;
     color: hsl(183, 100%, 15%);
 }
+
 .bill-input input:focus {
     outline: none;
 }
@@ -143,12 +158,14 @@ html, body {
     -webkit-appearance: none;
     margin: 0;
 }
-.bill-input span{
+
+.bill-input span {
     width: 45px;
     text-align: center;
     color: hsl(185, 41%, 80%);
 }
-.bill-input2:hover{
+
+.bill-input2:hover {
     border: 3px solid hsl(172, 67%, 45%);
 }
 
@@ -156,10 +173,11 @@ html, body {
     width: 100%;
     border: none;
     text-align: right;
-    background-color: transparent;    
+    background-color: transparent;
     font-weight: 900;
     color: hsl(183, 100%, 15%);
 }
+
 .bill-input2 input:focus {
     outline: none;
 }
@@ -170,21 +188,25 @@ html, body {
     -webkit-appearance: none;
     margin: 0;
 }
-.bill-input2 span{
+
+.bill-input2 span {
     width: 45px;
     text-align: center;
     color: hsl(185, 41%, 80%);
 }
-.calc-left, .calc-right {
+
+.calc-left,
+.calc-right {
     width: 50%;
 }
 
-.tip-top{
+.tip-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
 }
+
 .calc-right {
     background-color: hsl(183, 100%, 15%);
     padding: 2rem 1.5rem;
@@ -196,19 +218,21 @@ html, body {
     font-size: 0.9rem;
     color: antiquewhite;
 }
+
 .amount {
     width: 100%;
     font-size: 1.6rem;
-    color:   hsl(172, 67%, 45%);
+    color: hsl(172, 67%, 45%);
     text-align: right;
 }
 
-.tip, .pers {
+.tip,
+.pers {
     font-size: 0.7rem;
     color: hsl(186, 14%, 43%);
 }
 
-.butt1{
+.butt1 {
     margin-top: 5.4rem;
 }
 
@@ -221,77 +245,88 @@ html, body {
     text-transform: uppercase;
     font-size: 1rem;
     font-family: inherit;
-    color:hsl(183, 100%, 15%) ;
+    color: hsl(183, 100%, 15%);
 }
-.reset:hover{
+
+.reset:hover {
     background: hsl(172, 67%, 45%);
-    transition: all 0.5s ;
+    transition: all 0.5s;
 }
+
 @media (max-width:1199px) {
-    .calculator{
+    .calculator {
         padding: 0;
     }
 }
-@media (max-width:991px){
+
+@media (max-width:991px) {
+
     .calc-left,
     .calc-right {
         width: 50%;
     }
-    .calc-right{
+
+    .calc-right {
         padding: 1rem;
     }
+
     .dollar {
         font-size: 28px;
     }
 }
-@media (max-width:767px){
-    .calc
-    {
+
+@media (max-width:767px) {
+    .calc {
         flex-direction: column;
     }
+
     .calc-right,
     .calc-left {
         width: 100%;
     }
-    .calc-left
-    {
+
+    .calc-left {
         margin-left: 2rem;
         margin-bottom: 2rem;
     }
-     .calc-right
-    {
-     padding: 0.5rem;
+
+    .calc-right {
+        padding: 0.5rem;
     }
-    .dollar
-    {
-     font-size: 30px;
+
+    .dollar {
+        font-size: 30px;
     }
 }
+
 @media (max-width: 300px) {
-    .calculator{
+    .calculator {
         padding-top: 5rem;
         padding-bottom: 1rem;
     }
-   
-    .calc{
+
+    .calc {
         padding: .8rem;
-     }
-    .tip-top{
+    }
+
+    .tip-top {
         display: flex;
         justify-content: space-between;
     }
-    
-    .cl-tip{
-       flex: 30%;
-       max-width: 30%;
-       margin-right: 1px;
+
+    .cl-tip {
+        flex: 30%;
+        max-width: 30%;
+        margin-right: 1px;
     }
-    .tip-amount, .pers{
+
+    .tip-amount,
+    .pers {
         margin-left: -20%;
         font-size: 10px;
     }
-    .dollar 
-    {
+
+    .dollar {
         margin-right: -10% !important;
         font-size: 25px;
     }
@@ -308,10 +343,10 @@ html, body {
 
 
 /* Front end mentor */
-    /* .attribution { font-size: 11px; text-align: center; }
+/* .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
    */
-    /* @media screen and (max-width: 578px){
+/* @media screen and (max-width: 578px){
         .calc{
             flex-direction: column;
         }
