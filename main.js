@@ -48,7 +48,7 @@ Array.from(tipPercentages).forEach((tipPercentageEl) => {
   });
 });
 
-tipCustom.addEventListener('keyup', tipInputFun)
+tipCustom.addEventListener('input', tipInputFun)
 
 function tipInputFun() {
    tipValue = parseFloat(cl-tip-custom.value / 100);
