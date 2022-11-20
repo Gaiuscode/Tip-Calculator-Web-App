@@ -6,7 +6,7 @@ let totalAmountPerPersonEl = document.querySelector('#total-per-person');
 let error = document.querySelector(".error")
 let billInput = document.querySelector(".bill-input2")
 let resetBtn = document.querySelector(".reset")
-let tipCustom = document.querySelector('.cl-tip cl-tip-custom')
+let tipCustom = document.querySelector('.cl-tip-custom')
 
 
  billEl.value = "0";
@@ -51,7 +51,7 @@ Array.from(tipPercentages).forEach((tipPercentageEl) => {
 tipCustom.addEventListener('keyup', tipInputFun)
 
 function tipInputFun() {
-   tipValue = parseFloat(cl-tip, cl-tip-custom.value / 100);
+   tipValue = parseFloat(cl-tip-custom.value / 100);
 }   
 
 function calculateTip() {
