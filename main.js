@@ -9,8 +9,8 @@ let resetBtn = document.querySelector(".reset")
 let tipCustom = document.querySelector('.cl-tip-custom')
 
 
- billEl.value = "0";
- noOfPeopleEl.value = "1";
+billEl.value = "0";
+noOfPeopleEl.value = "1";
 
 let billAmount = 0;
 let noOfPeople = 1;
@@ -18,8 +18,8 @@ let tipPercentage = 0;
 let tipInput = 0;
 
 
-billEl.addEventListener('keyup', billInputFun) 
-function billInputFun () {
+billEl.addEventListener('keyup', billInputFun)
+function billInputFun() {
   billAmount = Number(billEl.value);
   calculateTip();
 };
@@ -29,11 +29,11 @@ noOfPeopleEl.addEventListener('keyup', noOfPeopleFun)
 function noOfPeopleFun() {
   noOfPeople = Number(noOfPeopleEl.value);
   if (noOfPeople < 1) {
-    error.style.display ="flex"
-    billInput.style.border ="thick solid red";
+    error.style.display = "flex"
+    billInput.style.border = "thick solid red";
   } else {
-    error.style.display ="none"
-    billInput.style.border ="none";
+    error.style.display = "none"
+    billInput.style.border = "none";
   }
   calculateTip();
 };
@@ -51,8 +51,8 @@ Array.from(tipPercentages).forEach((tipPercentageEl) => {
 tipCustom.addEventListener('input', tipInputFun)
 
 function tipInputFun() {
-   tipValue = parseFloat(cl-tip-custom.value / 100);
-}   
+  tipValue = parseFloat(cl - tip - custom.value / 100);
+}
 
 function calculateTip() {
 
@@ -81,13 +81,13 @@ function applyActiveClass(innerTextPect) {
     } else {
       tipPercentageEl.classList.remove('active')
     }
-  }); 
+  });
 }
 
 
 resetBtn.addEventListener('click', reset);
 
-function reset()  {
+function reset() {
   billEl.value = "0";
   billInputFun()
   noOfPeopleEl.value = "1";
