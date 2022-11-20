@@ -85,7 +85,7 @@ function applyActiveClass(innerTextPect) {
 
 resetBtn.addEventListener('click', reset);
 
-function reset()  {
-  billAmount.value = "0"; 
-  noOfPeople.value = "1"
+function resetTip()  {
+   billAmount = "0" 
+   noOfPeople = "1"
 }
