@@ -15,10 +15,11 @@ let tipPercentage = 0;
 let tipInput = 0;
 
 
-billEl.addEventListener('keyup', (e) => {
+billEl.addEventListener('keyup', billInputFun) 
+function billInputFun () {
   billAmount = Number(e.target.value);
   calculateTip();
-});
+};
 
 
 noOfPeopleEl.addEventListener('keyup', (e) => {
