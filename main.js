@@ -51,7 +51,7 @@ Array.from(tipPercentages).forEach((tipPercentageEl) => {
 tipCustom.addEventListener('input', tipInputFun)
 
 function tipInputFun() {
-  tipValue = parseFloat(cl - tip - custom.value / 100);
+  tipValue = parseFloat(cl-tip-custom.value / 100);
 }
 
 function calculateTip() {
@@ -84,7 +84,7 @@ function applyActiveClass(innerTextPect) {
   });
 }
 
-
+ 
 resetBtn.addEventListener('click', reset);
 
 function reset() {
