@@ -81,9 +81,9 @@ function updateValues({ tipAmountPerPerson, totalAmountPerPerson }) {
 function applyActiveClass(innerTextPect) {
   Array.from(tipPercentages).forEach((tipPercentageEl) => {
     if (tipPercentageEl.innerText == innerTextPect) {
-      tipPercentageEl.classList.add('active')
+      tipPercentageEl.classList.add('active-tip')
     } else {
-      tipPercentageEl.classList.remove('active')
+      tipPercentageEl.classList.remove('active-tip')
     }
   });
 }
