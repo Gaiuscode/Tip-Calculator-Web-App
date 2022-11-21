@@ -93,7 +93,7 @@ label {
     padding: 0.4rem 0.4rem;
 }
 
-.cl-tip.active {
+.active-tip {
     background-color: hsl(172, 67%, 45%);
     color: hsl(189, 41%, 97%);
 }
