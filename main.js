@@ -55,8 +55,8 @@ function tipInputFun() {
 
   Array.from(tipPercentages).forEach((tipPercentageEl) => {
     tipPercentageEl.classList.remove('active')
-  })
-}
+  });
+};
 
 function calculateTip() {
 
