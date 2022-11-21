@@ -16,7 +16,7 @@ let billAmount = 0;
 let noOfPeople = 1;
 let tipPercentage = 0;
 let tipInput = 0;
-
+let tipValue = 0.15;
 
 billEl.addEventListener('keyup', billInputFun)
 function billInputFun() {
