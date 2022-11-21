@@ -74,7 +74,7 @@ label {
     display: flex;
     flex-wrap: wrap;
 } */
-.calc-left .tip-value .cl-tips {
+.calc-left .tip-value .tips {
     display: flex;
     justify-content: space-between;
 }
