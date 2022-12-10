@@ -92,11 +92,13 @@ label {
     color: hsl(189, 41%, 97%);
     padding: 0.4rem 0.4rem;
 }
-
-.active-tip:hover {
+.cl-tip:hover {
     background-color: hsl(172, 67%, 45%);
     color: hsl(189, 41%, 97%);
-    transition: 0.5s;
+}
+.active-tip {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(189, 41%, 97%);
 }
 
 .cl-tip-custom {
