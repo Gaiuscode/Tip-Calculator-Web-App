@@ -97,4 +97,8 @@ function reset() {
   billInputFun()
   noOfPeopleEl.value = "1";
   noOfPeopleFun()
+  Array.from(tipPercentages).forEach((tipPercentageEl) => {
+    tipPercentageEl.classList.remove('active-tip')
+  }
+  )
 }
