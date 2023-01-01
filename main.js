@@ -8,7 +8,7 @@ let billInput = document.querySelector(".bill-input2")
 let resetBtn = document.querySelector(".reset")
 let tipCustom = document.querySelector('.cl-tip-custom')
 
-
+tipCustom.value ="0"
 billEl.value = "0";
 noOfPeopleEl.value = "1";
 
@@ -51,7 +51,7 @@ Array.from(tipPercentages).forEach((tipPercentageEl) => {
 tipCustom.addEventListener('input', tipInputFun);
 
 function tipInputFun() {
-  tipValue = parseFloat(tipCustom.value / 100);
+  tipPercentage = parseFloat(tipCustom.value);
 
   Array.from(tipPercentages).forEach((tipPercentageEl) => {
     tipPercentageEl.classList.remove('active-tip');
@@ -60,7 +60,7 @@ function tipInputFun() {
 };
 
 function calculateTip() {
-
+  
   let tipAmount = billAmount * (tipPercentage / 100);
   let totalAmount = billAmount + tipAmount;
   let tipAmountPerPerson = tipAmount / noOfPeople;
@@ -97,6 +97,8 @@ function reset() {
   billInputFun()
   noOfPeopleEl.value = "1";
   noOfPeopleFun()
+  tipCustom.value = "0"
+  billInputFun()
   Array.from(tipPercentages).forEach((tipPercentageEl) => {
     tipPercentageEl.classList.remove('active-tip')
   }
