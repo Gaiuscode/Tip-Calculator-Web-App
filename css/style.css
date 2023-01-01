@@ -116,14 +116,6 @@ label {
     padding: 0.4rem 0.4rem;
 }
 
-.cl-tips1 input {
-    border: none;
-}
-
-.cl-tips1 input:hover {
-    border: 3px solid hsl(183, 100%, 15%);
-}
-
 .tip {
     margin-top: 2rem;
 }
